@@ -77,7 +77,7 @@ public class ResponseHandler {
 		try {
 			return Integer.valueOf(maxStr);
 		} catch (NumberFormatException e) {
-			throw new IllegalArgumentException(String.format("Cannot parse max [%s]", maxStr));
+			throw new IllegalArgumentException(String.format("Cannot parse max [%s].", maxStr));
 		}
 	}
 
@@ -111,11 +111,13 @@ public class ResponseHandler {
 	}
 
 	/**
-	 * Gets the generator for the specified algorithm
+	 * Gets a generator for the specified algorithm.
 	 * 
 	 * @param algorithm
-	 *            the algorithm to use
-	 * @return the corresponding generator, or null if none can be found
+	 *            the desired algorithm, which may be null (in which case the default is used)
+	 * @return the generator
+	 * @throws IllegalArgumentException
+	 *             if algorithm does not exist
 	 */
 	protected Generator generator(String algorithm) {
 		return generatorRegistry.getGenerator(algorithm);

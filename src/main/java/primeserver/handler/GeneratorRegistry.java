@@ -41,6 +41,8 @@ public class GeneratorRegistry {
 	 * @param algorithm
 	 *            the desired algorithm, which may be null (in which case the default is used)
 	 * @return the generator
+	 * @throws IllegalArgumentException
+	 *             if algorithm does not exist
 	 */
 	public Generator getGenerator(String algorithm) {
 		if (algorithm == null) {
