@@ -23,17 +23,6 @@ import primeserver.handler.ResponseHandler;
  * </p>
  */
 
-
-
-/* 
- * 			<param-name>jersey.config.server.provider.packages</param-name>
-			<param-value>
-			com.jersey.jaxb,
-			com.fasterxml.jackson.jaxrs.json
- */
-
-
-
 @Path("primes")
 public class Primes extends ResourceConfig {
 	/** Response handler. */
