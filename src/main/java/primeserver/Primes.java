@@ -8,8 +8,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
-import org.glassfish.jersey.server.ResourceConfig;
-
 import primeserver.generator.GeneratorFactory;
 import primeserver.handler.GeneratorRegistry;
 import primeserver.handler.ResponseHandler;
@@ -23,7 +21,7 @@ import primeserver.handler.ResponseHandler;
  * </p>
  */
 @Path("primes")
-public class Primes extends ResourceConfig {
+public class Primes {
 	/** Response handler. */
 	protected final ResponseHandler rh = createResponseHandler();
 
