@@ -1,6 +1,0 @@
-primeserver/generator/SieveOfSundaramGeneratorTest.class
-primeserver/generator/BaseGeneratorTest.class
-primeserver/handler/ResponseHandlerTest.class
-primeserver/handler/GeneratorRegistryTest.class
-primeserver/generator/SieveOfEratosthenesGeneratorTest.class
-primeserver/generator/TrialDivisionGeneratorTest.class
