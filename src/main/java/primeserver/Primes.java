@@ -28,13 +28,6 @@ public class Primes extends ResourceConfig {
 	protected final ResponseHandler rh = createResponseHandler();
 
 	/**
-	 * Initialises a new instance of Primes.
-	 */
-	public Primes() {
-		packages("com.jersey.jaxb;com.fasterxml.jackson.jaxrs.json");
-	}
-
-	/**
 	 * Method handling HTTP GET requests.
 	 * 
 	 * @param max
