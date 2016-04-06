@@ -22,7 +22,6 @@ import primeserver.handler.ResponseHandler;
  * JSON stream.
  * </p>
  */
-
 @Path("primes")
 public class Primes extends ResourceConfig {
 	/** Response handler. */
@@ -30,7 +29,7 @@ public class Primes extends ResourceConfig {
 
 	/**
 	 * Initialises a new instance of Primes.
-	 /*
+	 */
 	public Primes() {
 		packages("com.jersey.jaxb;com.fasterxml.jackson.jaxrs.json");
 	}
